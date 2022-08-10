@@ -12,7 +12,7 @@ body {
   height: 100vh;
 }
 
-/* header */
+/* header text*/
 header {
   display: flex;
   flex-direction: row;
@@ -71,3 +71,24 @@ main > * {
 /* media queries */
 
 /* YOUR CODE HERE */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: start;
+
+  }
+  header > h1 {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  header > nav {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .airplane-card {
+    width: auto;
+  }
+  main > h2 {
+    margin-left: 1rem;
+  }
+}
